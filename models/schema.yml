@@ -1,6 +1,30 @@
 version: 2
 
 models:
+<<<<<<< HEAD
+  - name: customers
+    description: 1レコードが1件の顧客を示す
+    columns:
+      - name: customer_id
+        description: 顧客IDを示す主キー
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: 顧客の名
+        tests:
+          - not_null
+      - name: last_name
+        description: 顧客の姓
+        tests:
+          - not_null
+      - name: first_order_date
+        description: 初回の注文日。NULLは顧客がまだ注文したことがないことを示す
+      - name: most_recent_order_date
+        description: 最新の注文日。NULLは顧客がまだ注文したことがないことを示す
+      - name: number_of_orders
+        description: 顧客の累計注文件数。注文がない場合はNULL
+=======
   - name: stg_customers
     description: 顧客 source を staging 用に整形したモデル。
     columns:
@@ -88,3 +112,4 @@ unit_tests:
     expect:
       rows:
         - {customer_id: 1, first_name: "Jane", last_name: "Smith", first_order_date: null, most_recent_order_date: null, number_of_orders: 0}
+>>>>>>> fff18d0f420ca8074563c7aa8c81a99e2146ff7c

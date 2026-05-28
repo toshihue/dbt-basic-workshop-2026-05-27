@@ -1,8 +1,11 @@
+<<<<<<< HEAD
+=======
 {{
     config(
         materialized='table'
     )
 }}
+>>>>>>> fff18d0f420ca8074563c7aa8c81a99e2146ff7c
 
 with customers as (
 

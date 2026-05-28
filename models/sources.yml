@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+=======
 version: 2
 
+>>>>>>> fff18d0f420ca8074563c7aa8c81a99e2146ff7c
 sources:
   - name: jaffle_shop
     database: raw
@@ -16,4 +19,8 @@ sources:
           - name: id
             data_tests:
               - unique
+<<<<<<< HEAD
               - not_null
+=======
+              - not_null
+>>>>>>> fff18d0f420ca8074563c7aa8c81a99e2146ff7c
